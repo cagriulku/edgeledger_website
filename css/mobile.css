@@ -1,0 +1,209 @@
+/* Navbar */
+
+.navbar {
+    flex-direction: column;
+    height: 95px;
+}
+
+.navbar a {
+    padding: 10px 10px;
+}
+
+.navbar .logo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Header */
+
+.hero {
+    height: 70vh;
+}
+
+.hero .content {
+    padding-top: 40px;
+    height: 70vh;
+}
+
+.hero .content h1 {
+    font-size: 40px;
+}
+
+/* Features-About */
+
+.features-about {
+    flex-direction: column;
+    padding: 30px 10px;
+}
+
+.features-about-box {
+    padding: 0 10px;
+}
+
+.features-about-box i {
+    padding: 15px;
+}
+
+/* Twin- Flex Mobile */
+.flex-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-mobile-img {
+    flex: 100%;
+    width: 100%;
+}
+
+.flex-mobile-text {
+    flex: 50%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.flex-mobile-post-two {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-mobile-text-post-two {
+    flex: 50%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+/* About */
+
+#about-section-two .flex-mobile-text h2 {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+#about-section-two .flex-mobile-text p {
+    padding: 10px 0;
+}
+
+/* Cases */
+
+.cases-p .cases-first-p {
+    padding-top: 30px;
+}
+.cases-p .cases-second-p {
+    text-align: center;
+}
+.cases-p h1 {
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.cases-photos {
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.cases-photos .cases-img  {
+    flex: 100%;
+    /* flexin %100'ini gostermemizi sagladi */
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+/* Blog . html */
+
+.blog-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.blog-p h1 {
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.blog-heading-p {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.blog-second-p {
+    text-align: center;
+}
+
+.blog-photos {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    padding-bottom: 20px;
+}
+
+.blog-photos .blog-img  {
+    flex: 100%;
+    /* flexin %33.3'ini gostermemizi sagladi */
+    max-width: 100%;
+    padding: 0 10px;
+}
+ 
+.blog-photos .blog-photos-text-h4 {
+    flex: 33.3%;
+    /* flexin %25'ini gostermemizi sagladi */
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Contact */
+.contact {   
+    max-height: 25.500em;
+}
+.contact-left {
+    width: 30%;
+}
+
+.contact-right {
+    width: 70%;
+    padding-top: 40px;
+}
+
+.contact-right h2 {
+    font-size: 30px;
+}
+
+/* Footer */
+.main-footer {  
+    padding: 30px 0;
+}
+/* Blog . html */
+/* hero */
+.hero-blog {
+    height: 40vh;
+}
+.hero-blog .content-blog {
+    height: 60vh;
+}
+
+/* Blog Post */
+
+#blog-post .flex-mobile-text h2 {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+#blog-post .flex-mobile-text p {
+    padding: 10px 0;
+}

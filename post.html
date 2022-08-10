@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="./css/mobile.css">
+    <title>Welcome To EdgeLedger</title>
+</head>
+
+<body id="home">
+    <header class="hero-blog">
+        <div id="navbar" class="navbar top">
+            <a class="logo" href="index.html">
+                <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about-section-one">About</a></li>
+                    <li><a href="index.html#cases-section">Cases</a></li>
+                    <li><a href="index.html#blog-section-one">Blog</a></li>
+                    <li><a href="index.html#contact-section">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content-blog">
+            <h1>Blog</h1>
+            <p>Read This Blog</p>
+        </div>
+    </header>
+
+    <section id="post-section">
+        <div class="post-section flex-mobile">
+            <div class="heading flex-mobile-text">
+                <h2>Blog Post One</h2>
+                <p><i class="fa-solid fa-user"></i> Posted by <strong>John Doe</strong> | April 23 2020</p>
+            </div>
+            <div class="flex-mobile-img"">
+                <img src=" ./images/blog/blog1.jpg" alt="flex-img">
+            </div>
+            <div class="flex-mobile-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias illum, animi earum ea amet sequi
+                    reiciendis sit corporis sunt iusto cupiditate odio maxime adipisci cumque eligendi nemo dolore id
+                    itaque?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat molestias, a perspiciatis facilis
+                    rerum praesentium nihil. Ratione at ab ipsam facere deleniti, tempora libero! Excepturi, soluta
+                    laudantium aliquid hic vitae ex quaerat aperiam eligendi aut temporibus mollitia sapiente animi
+                    illum minus dicta fugiat non provident ad iste maxime! Consequuntur, repudiandae maxime.
+                    Reprehenderit, commodi laudantium. Voluptatibus dolorem in tenetur nostrum minus!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptas quibusdam nostrum dicta non vel
+                    nisi adipisci consequuntur molestiae perspiciatis enim ipsum, illo molestias sequi dolor explicabo
+                    harum laudantium soluta assumenda quidem quis dolorem. Nulla accusamus, voluptate eos reiciendis aut
+                    obcaecati facilis assumenda dignissimos neque dolore. Voluptates ut omnis velit?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer bg-dark">
+        <div class="footer-apps">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook fa-2x bg-dark"></i>
+            </a>
+            <a href="https://twitter.com/?lang=tr" target="_blank">
+                <i class="fa-brands fa-twitter fa-2x bg-dark"></i>
+            </a>
+            <a href="https://www.youtube.com/?hl=TR" target="_blank">
+                <i class="fa-brands fa-youtube fa-2x bg-dark"></i>
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x bg-dark"></i>
+            </a>
+        </div>
+        <p class="main-footer-p bg-dark">Copyright &copy; 2020 - EdgeLedger</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+</body>
+
+</html>
